@@ -7,4 +7,8 @@
     <string name="scissors">Forbici</string>
     <string name="play">Gioca</string>
     <string name="computerspick">Il computer ha scelto: </string>
+    <string name="victory">Hai vinto!</string>
+    <string name="loss">Hai perso!</string>
+    <string name="tie">Pareggio!</string>
+    <string name="invalid">Scelta non valida</string>
 </resources>

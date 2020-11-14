@@ -30,7 +30,6 @@
             android:text="@string/rock"
             android:textSize="30sp"
             android:layout_margin="10sp"
-            android:enabled="true"
             />
 
         <RadioButton
@@ -65,12 +64,23 @@
 
     <TextView
         android:id="@+id/computerspick"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/playbutton"
         android:textSize="30sp"
         android:text="@string/computerspick"
-        android:layout_margin="20sp"
+        android:layout_margin="10sp"
+        />
+
+    <TextView
+        android:id="@+id/computerschoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/computerspick"
+        android:layout_below="@id/playbutton"
+        android:layout_margin="10sp"
+        android:text="asd"
+        android:textSize="30sp"
         />
 
     <TextView
