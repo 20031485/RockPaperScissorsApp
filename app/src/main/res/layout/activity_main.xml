@@ -7,9 +7,79 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/title"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_200"
+        />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        >
+
+        <RadioButton
+            android:id="@+id/rock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rock"
+            android:textSize="30sp"
+            android:layout_margin="10sp"
+            android:enabled="true"
+            />
+
+        <RadioButton
+            android:id="@+id/paper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/paper"
+            android:textSize="30sp"
+            android:layout_margin="10sp"
+            />
+
+        <RadioButton
+            android:id="@+id/scissors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scissors"
+            android:textSize="30sp"
+            android:layout_margin="10sp"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/playbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup"
+        android:layout_margin="20sp"
+        android:text="@string/play"
+        android:textSize="50sp"
+        />
+
+    <TextView
+        android:id="@+id/computerspick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playbutton"
+        android:textSize="30sp"
+        android:text="@string/computerspick"
+        android:layout_margin="20sp"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/computerspick"
+        android:textSize="50sp"
+        android:layout_margin="20sp"
         />
 
 </RelativeLayout>
