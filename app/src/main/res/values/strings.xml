@@ -9,5 +9,5 @@
     <string name="victory">You win!</string>
     <string name="loss">You loose!</string>
     <string name="tie">Tie!</string>
-    <string name="invalid">Invalid choice!</string>
+    <string name="invalid">Make your choice!</string>
 </resources>
