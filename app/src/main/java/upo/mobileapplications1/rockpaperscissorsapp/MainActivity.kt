@@ -34,13 +34,13 @@ class MainActivity : AppCompatActivity() {
                 val computersChoice = computer.extract()
                 when(computersChoice){
                     0 -> {
-                        computersPick.text = R.string.rock.toString()
+                        computersPick.text = getString(R.string.rock)
                     }
                     1 -> {
-                        computersPick.text = R.string.paper.toString()
+                        computersPick.text = getString(R.string.paper)
                     }
                     2 -> {
-                        computersPick.text = R.string.scissors.toString()
+                        computersPick.text = getString(R.string.scissors)
                     }
                 }
 
@@ -60,20 +60,20 @@ class MainActivity : AppCompatActivity() {
                 if(choice == computersChoice){
                     result.setTextColor(Color.parseColor("#FFFF00"))
                     //result.text = R.string.tie.toString()
-                    result.setText(R.string.tie.toString())
+                    result.text = getString(R.string.tie)
                 }
                 //sconfitta
                 else if((computersChoice == 1 && choice == 0)
                     || (computersChoice == 2 && choice == 1)
                     || (computersChoice == 0 && choice == 2)){
                     result.setTextColor(Color.parseColor("#FF0000"))
-                    result.setText(R.string.loss.toString())
+                    result.text = getString(R.string.loss)
                 }
                 //vittoria
                 else{
                     result.setTextColor(Color.parseColor("#00FF00"))
                     //result.text = R.string.victory.toString()
-                    result.setText(R.string.victory.toString())
+                    result.text = getString(R.string.victory)
                 }
             }
         }
